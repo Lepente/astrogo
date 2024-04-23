@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
     <title>Astrogo</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -14,7 +14,7 @@
     <header>
         
         <nav class="navbar navbar-expand-lg navbar-fixed-top ">
-            <div class="container nav-wrapper container-fluid w-md-75 py-2 px-md-3 mt-4">
+            <div class="container nav-wrapper container-fluid py-2 px-md-3 mt-4 align-self-center">
                 <a class="navbar-brand" href="index.html"><img width="130px" src="images/logo-black.png" alt="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
                     <a class="nav-link" href="#price">Árazás</a>
                   </li>
                   <li class="nav-item align-self-center">
-                    <a class="nav-link" href="#contact">Elérhetőség</a>
+                    <a class="nav-link" href="#contact">Kapcsolat</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link btn-main" href="#">Belépés</a>
@@ -52,8 +52,26 @@
                         Gyors, könnyen használható minden eszközön. Fedezze fel a csillagok útmutatásait!</p>
                     <div class="cta-buttons">
                         <a href="" class="btn-main cta mr-2">Kipróbálom</a>
-                    <a href="" class="btn-secondary">Bemutató videó</a>
+                        <button type="button" class="btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Bemutató videó
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Bemutató videó</h1>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="video-wrapper">
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qdUQgDCafko?si=cdj6L1AAw6JSjghs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
                     </div>
+                    </div>
+                    
                 </div>
                 <div class="col-12 col-md-12 col-lg-6 text-center order-2 order-md-2 ml-auto">
                     <img class="img-fluid w-75 w-md-75 w-lg-75" src="images/mobile-mockup-full.png" alt="screenshot">
@@ -65,22 +83,43 @@
     <div id="features" class="section container features">
             <div class="shadow p-5 bg-white text-center round features-card">
                 <h1 class="pb-4">Különleges funkciók</h1>
-                <div class="row">
+                <div class="row mb-5">
                     <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
                         <i class="ti-paint-bucket text-primary h1"></i>
-                        <h3 class="mt-4 text-capitalize h5 ">Barhol</h3>
+                        <h3 class="mt-4 text-capitalize h5 ">AI Funkciók</h3>
                         <p class="regular p-basic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae
                             tempore ipsam dignissimos molestias.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
                         <i class="ti-shine text-primary h1"></i>
-                        <h3 class="mt-4 text-capitalize h5 ">powerful design</h3>
+                        <h3 class="mt-4 text-capitalize h5 ">Eszközök asztrológusoknak</h3>
                         <p class="regular p-basic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae
                             tempore ipsam dignissimos molestias.</p>
                     </div>
                     <div class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">
                         <i class="ti-thought text-primary h1"></i>
-                        <h3 class="mt-4 text-capitalize h5 ">Barmikor</h3>
+                        <h3 class="mt-4 text-capitalize h5 ">Analitikus szövegösszerakás</h3>
+                        <p class="regular p-basic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae
+                            tempore ipsam dignissimos molestias.</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
+                        <i class="ti-paint-bucket text-primary h1"></i>
+                        <h3 class="mt-4 text-capitalize h5 ">Vizsgálat</h3>
+                        <p class="regular p-basic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae
+                            tempore ipsam dignissimos molestias.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
+                        <i class="ti-shine text-primary h1"></i>
+                        <h3 class="mt-4 text-capitalize h5 ">Szintézis</h3>
+                        <p class="regular p-basic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae
+                            tempore ipsam dignissimos molestias.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">
+                        <i class="ti-thought text-primary h1"></i>
+                        <h3 class="mt-4 text-capitalize h5 ">Gyors Keresés</h3>
                         <p class="regular p-basic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae
                             tempore ipsam dignissimos molestias.</p>
                         </p>
@@ -91,8 +130,8 @@
 
 
     <div class="container grid">
-                <div class="content-wrapper gradient-background-3 first pt-5 px-3 text-center round" style="background-color: #fff;">
-                    <img src="images/mobile-mockup.png" style="width: 400px;" alt="Feature image">
+                <div class="content-wrapper first gradient-background-3 pt-5 px-3 text-center round" style="background-color: #F2F1F4;">
+                    <img class="img-fluid" src="images/mobile-mockup.png" style="width: 400px;" alt="Feature image">
                 </div>
                 <div class="content-wrapper gradient second py-5 px-5 round" style="background-color: white;">
                     <h2>
@@ -106,49 +145,30 @@
                     </h2>
                     <p class="short-paragraph p-basic">A tarot kártya kirakások olyan módszerek vagy elrendezések, amelyek segítségével a tarot kártyák interpretálhatóak és értelmezhetőek. Ezek a kirakások különböző mintákat követnek, amelyek lehetővé teszik a kártyák közötti kapcsolatok feltárását és az üzenetek mélyebb megértését.</p>
                 </div>
-                <div class="content-wrapper gradient pt-5 px-3 text-center round" style="background-color: #FEE9DF !important;">
-                    <img src="images/mobile-mockup.png" style="width: 400px;" alt="Feature image">
+                <div class="content-wrapper gradient-background-3 pt-5 px-3 text-center round" style="background-color: #F2F1F4 !important;">
+                    <img class="img-fluid" src="images/mobile-mockup.png" style="width: 400px;" alt="Feature image">
                 </div>
                 <img src="images/gradient-3.png" class="gradient-right-blue"  alt="Gradient Background">
     </div>
 
 <div id="about" class="container mt-5">
     <img src="images/gradient-3.png" class="gradient-left-blue"  alt="Gradient Background">
-    <h2 class="my-5 text-center title video-title">Astrogo egy videóban</h2>
     <div class="second-grid overflow-hidden">
         <div class="video-section text-center">
+            <h2 class="text-center title large-title">AI funkciókkal töltve</h2>
             <p class="video-text">
-                Tekintse meg a bemutató videót, ahol részletesebben láthaja hogyan is működik a szoftver és különböző funkcóiról tanulhat, továbbá arról, hogy miért érdemes Prémium csomagot vásárolni.
-            </p>
-            <button type="button" class="btn-main border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Videó megnézése
-              </button>
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Bemutató videó</h1>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="video-wrapper">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qdUQgDCafko?si=cdj6L1AAw6JSjghs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="btn-main border-0">Regisztrálok</button>
         </div>        
         <div class="about p-5">
             <h3>Mi az Astrogo?</h3>
             <p class="pt-2 w-md-75 p-basic">Fedezze fel az asztrológia csodálatos világát a legkorszerűbb asztrológiai szoftverünk segítségével. Merüljön el az égi testek bölcsességében és fedezze fel a saját sorsát és lehetőségeit a csillagok útmutatásaival. Az intuitív felület és az összetett analitikai eszközök segítségével könnyedén navigálhat a horoszkópjai világában, és felfedezheti a belső egyensúly és harmónia lehetőségeit. Ne hagyja ki a lehetőséget, hogy a legjobbat hozza ki magából és az életéből!</p>
         </div>
         <div class="sign-up p-5">
-            <h3>Fedezze fel!</h3>
-            <p class="pb-3 p-basic">Csatlakozzon most az Astrogo-hoz, és nyisson kaput az asztrológia világába, hogy feltárja a csillagok rejtelmeit és útmutatásait az élet útján!</p>
+            <h3>Kérdése van?</h3>
+            <p class="pb-3 p-basic">Keressen fel nyugodtan, válaszolunk kérdéseire és segítünk amiben kell!</p>
             <div class="register-btn">
-                <a href="#" class="btn-main">Regisztrálás</a>
+                <a href="#" class="btn-main">Kapcsolat</a>
             </div>
         </div>
 
@@ -182,84 +202,135 @@
 
 
 <div id="price" class="container wrapper text-center">
-    <h2 class="title pb-1">Astrogo Árak</h2>
+    <h2 class="title pb-1">Astrogo Árazás</h2>
     <p class="sub-text">Válassza ki a kívánt csomagot, van minden mindekinek!</p>
     <div class="price-part py-5">
-        <div class="card">
-            <h3>
-                Basic
+        <div class="card card-white text-start">
+            <h3 class="price-title">
+                Standard
             </h3>
-            <ul>
-                <li>
-                    Lorem
-                </li>
-                <li>
-                    Lorem
-                </li>
-                <li>
-                    Lorem
-                </li>
-                <li>
-                    Lorem
-                </li>
-                <li>
-                    Lorem
-                </li>
-            </ul>
-            <a href="#" class="btn-secondary">Vásárlás</a>
+            <p>A standard fiókkal rendelkező felhasználók számos hasznos funkciót érhetnek el az asztrológiai platformon. Ezek közé tartozik az új asztrogramok készítése és automatikus mentése, valamint a hely keresése a Google segítségével, melynek során földrajzi adatok és időzóna automatikusan kitöltődik. Emellett lehetőség van az asztrogramok módosítására, mozgatására, és különféle kereséseket is végezhetnek a mentett asztrogramok között.</p>
         </div>
-        <div class="card">
-            <h3>
-                Pro
+        <div class="card text-start">
+            <h3 class="price-title">
+                Prémium
             </h3>
-            <ul>
-                <li>
-                    Lorem
-                </li>
-                <li>
-                    Lorem
-                </li>
-                <li>
-                    Lorem
-                </li>
-                <li>
-                    Lorem
-                </li>
-                <li>
-                    Lorem
-                </li>
-            </ul>
-            <a href="#" class="btn-secondary">Vásárlás</a>
-        </div>
-        <div class="card">
-            <h3>
-                Expert
-            </h3>
-            <ul>
-                <li>
-                    Lorem
-                </li>
-                <li>
-                    Lorem
-                </li>
-                <li>
-                    Lorem
-                </li>
-                <li>
-                    Lorem
-                </li>
-                <li>
-                    Lorem
-                </li>
-            </ul>
-            <a href="#" class="btn-secondary">Vásárlás</a>
+            <p>A Prémium fiók számos plusz funkciót tartalmaz. Ha asztrológus vagy, akkor hasznodra lehetnek a prémium szolgáltatások, mint az analitikus horoszkóp generálása, szintézis írása.</p>
+            <p> Token vásárlás esetén a prémium fiókot automatikusan megkapod, és az mindaddig aktív lesz, amíg el nem fogy a tokened.</p>
+            <p>Mi fogyaszt tokent? <br>
+                <ul>
+                    <li>Analitikus leírás generálás kódok alapján, a feltöltött szövegekkel	= 40 token - értéke 0,4 euró</li>
+                </ul>
+                <ul>
+                    <li>Tarot leírás generálás kódok alapján, a feltöltött szövegekkel = 40 token - értéke 0,4 euró</li>
+                </ul>
+                <ul>
+                    <li>Tarot értelmezés a Mesterséges Intelligencia (röviden AI) segítségével = 200 token - értéke 2 euró</li>
+                </ul>
+                </p>
         </div>
     </div>
 </div>
 
-<footer class="text-center py-5 px-5">
-    <div class="footer-links text-center">
-        <a class="pl-3 pb-1" href="index.html"><img class="footer-logo" width="150px" src="images/logo-white.png" alt="logo"></a>
+<div class="container wrapper">
+    <div class="faq-content">
+        <h2 class="title text-center">Gyakori kérdések</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Mi van pluszban a prémium változatban?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Analitikus szövegek írása, analitikus értelmezés generálása, színtézis írás, saját pszínpaletta, analitikus értelmezés nyomtatása és mentése doc, pdf formátumban, Mesterséges Intelligencia (AI) funkciók, tehát minden, ami egy profi asztrológusnak kell.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Megoszthatom másokkal szerzeményeimet?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Mire jó a tarot kirakás?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Analitikus szövegek írása, analitikus értelmezés generálása, színtézis írás, saját pszínpaletta, analitikus értelmezés nyomtatása és mentése doc, pdf formátumban, Mesterséges Intelligencia (AI) funkciók, tehát minden, ami egy profi asztrológusnak kell.
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div id="contact" class="container wrapper">
+    <div class="contact-form content-wrapper gradient round">
+        <div class="contact-content">
+            <h3 class="contact-title mt-2 mb-4">Lépjen kapcsolatba</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="cta-btn">
+                <button type="submit" class="btn-main border-0 d-none d-lg-block">Küldés</button>
+            </div>
+        </div>
+        <div class="form text-start">
+            <div class="col-lg-12">
+              <form id="contactForm" method="POST" action="#">
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">Teljes név</label>
+                  <input type="text" class="form-control" id="fullName" name="fullName" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Tárgy</label>
+                  <input type="text" class="form-control" id="subject" name="subject" required>
+                </div>
+                <div class="mb-0">
+                  <label for="message" class="form-label text-start">Üzenet</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+              </form>
+              <div class="d-flex cta-btn justify-content-center">
+                <button type="submit" class="btn-main border-0 d-block d-lg-none mt-5" style="margin-right: 0 !important;">Küldés</button>
+            </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+<footer class="container py-5 px-4">
+    <div class="row">
+        <div class="col-lg-4">
+            <a class="pl-3 pb-1" href="index.html"><img class="footer-logo" width="150px" src="images/logo-white.png" alt="logo"></a>
+            <p class="cegadatok">Cégadatok</p>
+        </div>
+        <div class="col-lg-4 footer-links">
+              <a class="nav-link" href="#about">Adatvédelem</a>
+          
+              <a class="nav-link" href="#features">GYiK</a>
+         
+              <a class="nav-link" href="#price">Felhasználási feltételek</a>
+         
+              <a class="nav-link" href="#contact">Sütik</a>
+        
+              <a class="nav-link cta" href="#">Prémium</a>
+        </div>
+        <div class="col-lg-4 footer-links">
           
               <a class="nav-link" href="#about">Szoftverről</a>
           
@@ -271,6 +342,17 @@
         
               <a class="nav-link cta" href="#">Belépés</a>
     </div>
+        </div>
+        <div class="row align-items-center mt-5">
+            <div class="col-lg-6">
+                <small style="color: #fff; text-align: center;">Astrogo©2024, Minden jog fenntartva. </small>
+            </div>
+            <div class="col-lg-6 text-lg-end">
+                <img class="mr-5" src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="PayPal Logo">
+                <img class="mr-5" height="76px" src="images/70602_visa_straight_icon.png" alt="Visa Logo">
+                <img class="mr-5" height="48px" style="background-color: #F2F1F4; padding: 2px 12px;" src="images/mastercard.png" alt="Mastercard Logo">
+            </div>
+        </div>
 </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
