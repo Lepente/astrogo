@@ -74,6 +74,7 @@ a {
 
 .header-wrapper {
   margin-top: 8rem;
+  overflow-x: hidden;
 }
 
 .btn-main {
@@ -311,6 +312,10 @@ a {
   background-image: url("images/card-background.png");
   background-position: top;
   background-repeat: no-repeat;
+}
+
+.container {
+  overflow-x: hidden;
 }
 
 .card-white {
