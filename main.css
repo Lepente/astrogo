@@ -484,6 +484,7 @@ form {
     margin-top: 16px;
     overflow-x: visible;
     justify-self: center;
+    right: 16px;
   }
 
   .modal-dialog {
