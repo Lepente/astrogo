@@ -478,7 +478,9 @@ form {
   }
 
   .nav-wrapper {
-    max-width: 95% !important;
+    text-align: center;
+    max-width: 90% !important;
+    margin: 16px 16px !important;
   }
 
   .modal-dialog {
