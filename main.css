@@ -480,9 +480,10 @@ form {
   .nav-wrapper {
     text-align: center;
     max-width: 95% !important;
-    margin-top: 16px;
     margin: auto !important;
-    
+    margin-top: 16px;
+    overflow-x: visible;
+    justify-self: center;
   }
 
   .modal-dialog {
