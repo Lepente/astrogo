@@ -480,7 +480,8 @@ form {
   .nav-wrapper {
     text-align: center;
     max-width: 95% !important;
-    margin: 16px 15px !important;
+    margin: 16px 16px !important;
+    margin-right: 15px !important;
     margin: auto !important;
     overflow-x: visible;
   }
