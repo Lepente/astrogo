@@ -417,7 +417,7 @@ form {
 }
 
 .modal-dialog {
-  margin: 100px 300px;
+  margin: 10rem 5rem;
 }
 
 .modal-content {
@@ -479,7 +479,22 @@ form {
 
   .nav-wrapper {
     max-width: 95% !important;
-    margin: auto;
+  }
+
+  .modal-dialog {
+    margin-top: 56px !important;
+    margin: 32px 16px;
+  }
+
+  .content-wrapper > img {
+    position: relative;
+    bottom: 0 !important;
+    width: auto;
+  }
+
+  .content-wrapper {
+    position: relative;
+    text-align: center;
   }
 
 }
@@ -506,11 +521,9 @@ form {
   }
 
   .content-wrapper > img {
+    position: relative;
     width: auto;
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    right: 0;
   }
 
   .content-wrapper {
@@ -592,7 +605,7 @@ form {
 
     .grid {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto auto;
     }
 
     h1 {
@@ -613,7 +626,7 @@ form {
     }
 
     .video-text {
-      padding-top: 0;
+      padding-top: 16px;
     }
 
     .video-section, .about , .sign-up {
@@ -686,3 +699,14 @@ form {
       min-width: 15rem;
     }
  }
+
+ @media (max-width: 1330px) { 
+
+      h1 {
+        font-size: 3rem !important;
+      }
+
+      .header-wrapper {
+        margin-top: 6rem;
+      }
+}
