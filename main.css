@@ -478,13 +478,9 @@ form {
   }
 
   .nav-wrapper {
-    text-align: center;
-    margin: auto !important;
-    margin-right: 16px !important;
     margin-top: 16px;
-    overflow-x: visible;
-    justify-self: center;
-    right: 16px;
+    margin: 0;
+    justify-self: auto;
   }
 
   .modal-dialog {
